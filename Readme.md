@@ -8,5 +8,7 @@
 # To train a new NER model
 # The dataset can be download from http://www.geniaproject.org/shared-tasks/bionlp-jnlpba-shared-task-2004
 # To refer more about model training, go to: https://stanfordnlp.github.io/CoreNLP/ner.html
-java -mx4g -cp stanford-ner.jar edu.stanford.nlp.ie.crf.CRFClassifier -prop /home/abin/my_works/github_works/nlp_examples/train/genia4er.prop
+java -mx4g -cp stanford-ner.jar edu.stanford.nlp.ie.crf.CRFClassifier -prop <path/to/.prop/file/for/training>
 
+# To evaluate the trained model
+java -cp stanford-ner.jar edu.stanford.nlp.ie.crf.CRFClassifier -loadClassifier <path/to/trained/model> -testFile <path/to/test/file>
