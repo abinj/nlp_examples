@@ -33,8 +33,20 @@ usePrevSequences=true
 useTypeSeqs=true
 useTypeSeqs2=true
 useTypeySequences=true
+useOccurrencePatterns=true
+useLastRealWord=true
+useNextRealWord=true
+normalize=true
 wordShape=chris2useLC
-#qnSize=10
-#featureDiffThresh=0.05
-#saveFeatureIndexToDisk = true
+useDisjunctive=true
+disjunctionWidth=5
+
+readerAndWriter=edu.stanford.nlp.sequences.ColumnDocumentReaderAndWriter
+
 useObservedSequencesOnly=true
+
+useQN = true
+QNsize = 25
+
+# makes it go faster
+featureDiffThresh=0.05
