@@ -22,10 +22,10 @@ print(classified_text)
 # NER using stanford-corenlp library
 # Make sure you have set $CORENLP_HOME as environment variable before start to use Stanford CoreNLPClient
 
-# with corenlp.CoreNLPClient(annotators="ner".split(), memory='2G') as client:
-#   ann = client.annotate(text)
+with corenlp.CoreNLPClient(annotators="ner".split(), memory='2G') as client:
+  ann = client.annotate(text)
 
-# print(ann)
+print(ann)
 
 
 
